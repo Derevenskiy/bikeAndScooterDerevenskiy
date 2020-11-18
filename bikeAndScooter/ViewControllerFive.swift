@@ -30,6 +30,8 @@ class ViewControllerFive: UIViewController, CLLocationManagerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        customNavigationBar.delegate = self
+        
         rectangleKickScooterImage.isHidden = true
         rectangleBicycleImage.isHidden = true
         rectangleScooterImage.isHidden = true
@@ -94,4 +96,10 @@ class ViewControllerFive: UIViewController, CLLocationManagerDelegate {
         rectangleScooterImage.isHidden = false
     }
     
+}
+
+extension ViewControllerFive: NavigationBarDelegate {
+    func nameSettingsButton() {
+        self.performSegue(withIdentifier: "editAccountController", sender: nil)
+    }
 }

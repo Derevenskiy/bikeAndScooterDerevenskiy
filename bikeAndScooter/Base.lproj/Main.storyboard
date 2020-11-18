@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="d1c-Sw-Xvv">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -205,13 +205,13 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="mackrr@outlook.com" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="r1V-TO-ybG">
-                                <rect key="frame" x="26" y="205" width="333" height="29"/>
+                                <rect key="frame" x="26" y="205" width="333" height="28"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="24"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RectangleName" translatesAutoresizingMaskIntoConstraints="NO" id="3oR-gw-fgE">
-                                <rect key="frame" x="16" y="243" width="343" height="1"/>
+                                <rect key="frame" x="16" y="242" width="343" height="1"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is your email?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FxP-ry-qOo">
                                 <rect key="frame" x="16" y="112" width="260" height="38"/>
@@ -226,7 +226,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E2w-um-DwF">
-                                <rect key="frame" x="321" y="484" width="38" height="40"/>
+                                <rect key="frame" x="321" y="483" width="38" height="40"/>
                                 <state key="normal" image="Oval"/>
                                 <connections>
                                     <action selector="buttonOval:" destination="Xdj-jJ-sVK" eventType="touchUpInside" id="t3j-eh-Dsj"/>
@@ -292,7 +292,7 @@
                                 <state key="normal" image="Oval"/>
                                 <connections>
                                     <action selector="buttonOval:" destination="Xdj-jJ-sVK" eventType="touchUpInside" id="vEx-wd-NhZ"/>
-                                    <segue destination="Hhm-9b-QLX" kind="presentation" identifier="five" id="tlb-1r-b3s"/>
+                                    <segue destination="Fsy-Jc-IFe" kind="show" id="3Hw-UC-omO"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="clo-D7-QFJ">
@@ -357,14 +357,6 @@
                                 <rect key="frame" x="0.0" y="571" width="375" height="96"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="soP-lK-TaF">
-                                <rect key="frame" x="162" y="592" width="50" height="33"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="icons8-electric_bike"/>
-                                <connections>
-                                    <action selector="bicycleAction:" destination="Hhm-9b-QLX" eventType="touchUpInside" id="yPe-Ix-Iu7"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kIx-0I-ZeS">
                                 <rect key="frame" x="90" y="489" width="194" height="69"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -386,20 +378,23 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="шестеренка внизу"/>
                                 <connections>
-                                    <segue destination="rHp-7e-JIj" kind="presentation" id="6Pk-YA-9sZ"/>
+                                    <segue destination="rHp-7e-JIj" kind="show" id="6Pk-YA-9sZ"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Owy-BO-2Zy" customClass="NavigationBar" customModule="bikeAndScooter" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="105"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jSD-ly-OaN">
                                 <rect key="frame" x="61" y="590" width="40" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="icons8-kick_scooter"/>
                                 <connections>
                                     <action selector="kickScooterAction:" destination="Hhm-9b-QLX" eventType="touchUpInside" id="Ux5-tS-wmG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="soP-lK-TaF">
+                                <rect key="frame" x="162" y="592" width="50" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="icons8-electric_bike"/>
+                                <connections>
+                                    <action selector="bicycleAction:" destination="Hhm-9b-QLX" eventType="touchUpInside" id="yPe-Ix-Iu7"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ARs-cr-v7v">
@@ -422,21 +417,78 @@
                                 <rect key="frame" x="264" y="641" width="58" height="3"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Owy-BO-2Zy" customClass="NavigationBar" customModule="bikeAndScooter" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="105"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="105" id="wEf-hG-o3n"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Owy-BO-2Zy" firstAttribute="trailing" secondItem="ggZ-if-MPe" secondAttribute="trailing" id="9sg-7O-ooZ"/>
+                            <constraint firstItem="Owy-BO-2Zy" firstAttribute="top" secondItem="yYQ-Ou-jcT" secondAttribute="top" id="Pfk-e1-obP"/>
+                            <constraint firstItem="Owy-BO-2Zy" firstAttribute="leading" secondItem="ggZ-if-MPe" secondAttribute="leading" id="ncj-yS-afB"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ggZ-if-MPe"/>
                     </view>
-                    <navigationItem key="navigationItem" id="6aY-te-IEv"/>
+                    <navigationItem key="navigationItem" id="kQK-t5-tLE"/>
                     <connections>
+                        <outlet property="customNavigationBar" destination="Owy-BO-2Zy" id="XcT-zl-NXf"/>
                         <outlet property="mapView" destination="XiK-Mo-xxZ" id="Frz-gH-5n0"/>
                         <outlet property="rectangleBicycleImage" destination="XZa-23-aU2" id="X9c-Ak-wFZ"/>
                         <outlet property="rectangleKickScooterImage" destination="IMC-Z5-CA1" id="VqY-Ya-Bwn"/>
                         <outlet property="rectangleScooterImage" destination="IJY-uj-2Vw" id="fXf-tI-ePs"/>
+                        <segue destination="z8U-az-WRj" kind="show" identifier="editAccountController" id="DF3-hU-ckD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DPr-yz-kqk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3624.8000000000002" y="133.5832083958021"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="5Mr-dw-gOT">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="Fsy-Jc-IFe" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="y3X-5k-qfM">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Hhm-9b-QLX" kind="relationship" relationship="rootViewController" id="R7j-yz-dk8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qzx-h6-WhR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3625" y="-600"/>
+        </scene>
+        <!--View Controller Eight-->
+        <scene sceneID="6LI-ya-4YA">
+            <objects>
+                <viewController id="z8U-az-WRj" customClass="ViewControllerEight" customModule="bikeAndScooter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Lka-Rz-Ctb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="957"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tgt-tm-zWG">
+                                <rect key="frame" x="38" y="20" width="124" height="77"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="goBackToHome:" destination="z8U-az-WRj" eventType="touchUpInside" id="GXT-Q3-Pz6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Cfo-BI-2Fe"/>
+                    </view>
+                    <value key="contentSizeForViewInPopover" type="size" width="375" height="668"/>
+                    <size key="freeformSize" width="375" height="957"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gvs-ha-Kxc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4574" y="-731"/>
         </scene>
         <!--View Controller Seven-->
         <scene sceneID="EX1-EE-1BP">
@@ -446,38 +498,146 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="957"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Ld-bc-JDW">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" indicatorStyle="black" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ld-bc-JDW">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="957"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ohH-GW-ebY">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="957"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Es9-uh-1ZO" customClass="NavigationBar" customModule="bikeAndScooter" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="105"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="105" id="Kc2-em-08L"/>
+                                                </constraints>
+                                            </view>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VMt-mh-bgy">
+                                                <rect key="frame" x="0.0" y="861" width="375" height="96"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="96" id="gKS-QE-yZV"/>
+                                                </constraints>
+                                                <state key="normal" image="Group 2"/>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="My Trips" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rnb-vU-Lio">
+                                                <rect key="frame" x="64" y="137" width="61" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="strelkaMyTrips" translatesAutoresizingMaskIntoConstraints="NO" id="afX-GQ-ntL">
+                                                <rect key="frame" x="29" y="136" width="20" height="22"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ps0-ad-2bh">
+                                                <rect key="frame" x="16" y="169" width="343" height="285"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="RectangleAccount" translatesAutoresizingMaskIntoConstraints="NO" id="nvh-Vg-49Q">
+                                                        <rect key="frame" x="0.0" y="0.0" width="343" height="285"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Yesterday, 18:53 to 22:41" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w6B-AE-fft">
+                                                        <rect key="frame" x="10" y="12" width="128" height="14"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="12"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$6.700" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dkQ-vE-D9R">
+                                                        <rect key="frame" x="293" y="12" width="39" height="15"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="12"/>
+                                                        <color key="textColor" red="0.3130474687" green="0.88948851819999997" blue="0.75965291260000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YPn-vF-uAe">
+                                                        <rect key="frame" x="10" y="226" width="322" height="47"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <state key="normal" image="allMyTripsButton"/>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="All my Trips" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bID-N3-r7g">
+                                                        <rect key="frame" x="124" y="237" width="95" height="24"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="20"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Vf-1B-Sdw" customClass="YMKMapView">
+                                                        <rect key="frame" x="10" y="35" width="322" height="179"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </view>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IfV-Xf-VYa">
+                                                <rect key="frame" x="16" y="797" width="343" height="48"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" image="signOutRectangle"/>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sign Out" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6hs-4S-ljs">
+                                                <rect key="frame" x="151" y="809" width="73" height="24"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="20"/>
+                                                <color key="textColor" red="0.97678345441818237" green="0.22797882556915283" blue="0.32233050465583801" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Payment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z9J-hk-Vxb">
+                                                <rect key="frame" x="67" y="468" width="66" height="22"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="18"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="paymentCard" translatesAutoresizingMaskIntoConstraints="NO" id="lHC-2f-k2d">
+                                                <rect key="frame" x="29" y="470" width="22" height="18"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="Es9-uh-1ZO" firstAttribute="top" secondItem="ohH-GW-ebY" secondAttribute="top" id="PjE-74-ZtY"/>
+                                            <constraint firstItem="VMt-mh-bgy" firstAttribute="top" secondItem="Es9-uh-1ZO" secondAttribute="bottom" constant="756" id="PtR-1q-6ex"/>
+                                            <constraint firstAttribute="bottom" secondItem="VMt-mh-bgy" secondAttribute="bottom" id="eLc-sU-ktk"/>
+                                            <constraint firstAttribute="trailing" secondItem="VMt-mh-bgy" secondAttribute="trailing" id="gOm-ln-7yO"/>
+                                            <constraint firstItem="VMt-mh-bgy" firstAttribute="leading" secondItem="ohH-GW-ebY" secondAttribute="leading" id="qUh-In-DOq"/>
+                                            <constraint firstAttribute="trailing" secondItem="Es9-uh-1ZO" secondAttribute="trailing" id="sSi-MI-jXK"/>
+                                            <constraint firstItem="Es9-uh-1ZO" firstAttribute="leading" secondItem="ohH-GW-ebY" secondAttribute="leading" id="xBa-VX-Gt5"/>
+                                        </constraints>
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="ohH-GW-ebY" firstAttribute="height" secondItem="4Ld-bc-JDW" secondAttribute="height" priority="250" id="95F-ni-ddm"/>
-                                    <constraint firstAttribute="trailing" secondItem="ohH-GW-ebY" secondAttribute="trailing" id="DCQ-Yc-hdM"/>
-                                    <constraint firstAttribute="bottom" secondItem="ohH-GW-ebY" secondAttribute="bottom" id="N4X-VI-spq"/>
-                                    <constraint firstItem="ohH-GW-ebY" firstAttribute="width" secondItem="4Ld-bc-JDW" secondAttribute="width" id="eT6-cb-0NC"/>
-                                    <constraint firstItem="ohH-GW-ebY" firstAttribute="leading" secondItem="4Ld-bc-JDW" secondAttribute="leading" id="ffF-60-EYP"/>
-                                    <constraint firstItem="ohH-GW-ebY" firstAttribute="top" secondItem="4Ld-bc-JDW" secondAttribute="top" id="ph3-tK-9TC"/>
+                                    <constraint firstItem="ohH-GW-ebY" firstAttribute="width" secondItem="4Ld-bc-JDW" secondAttribute="width" id="0ix-OU-hs8"/>
+                                    <constraint firstItem="ohH-GW-ebY" firstAttribute="top" secondItem="4Ld-bc-JDW" secondAttribute="top" id="1YS-oW-v7Z"/>
+                                    <constraint firstItem="ohH-GW-ebY" firstAttribute="leading" secondItem="4Ld-bc-JDW" secondAttribute="leading" id="glU-Oe-U8k"/>
+                                    <constraint firstAttribute="bottom" secondItem="ohH-GW-ebY" secondAttribute="bottom" id="mao-ZJ-D7M"/>
+                                    <constraint firstItem="ohH-GW-ebY" firstAttribute="height" secondItem="4Ld-bc-JDW" secondAttribute="height" priority="250" id="oXV-Hk-mzJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="ohH-GW-ebY" secondAttribute="trailing" id="s0e-zQ-b8r"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="4Ld-bc-JDW" firstAttribute="leading" secondItem="OvN-bF-pjg" secondAttribute="leading" id="Hrx-S8-cuL"/>
-                            <constraint firstItem="4Ld-bc-JDW" firstAttribute="trailing" secondItem="OvN-bF-pjg" secondAttribute="trailing" id="Vtd-93-FVw"/>
-                            <constraint firstItem="4Ld-bc-JDW" firstAttribute="top" secondItem="8gI-of-AEH" secondAttribute="top" id="vBy-tu-sc0"/>
-                            <constraint firstItem="4Ld-bc-JDW" firstAttribute="bottom" secondItem="OvN-bF-pjg" secondAttribute="bottom" id="wTe-wD-juU"/>
+                            <constraint firstItem="4Ld-bc-JDW" firstAttribute="leading" secondItem="OvN-bF-pjg" secondAttribute="leading" id="5ze-TJ-0bt"/>
+                            <constraint firstItem="4Ld-bc-JDW" firstAttribute="bottom" secondItem="OvN-bF-pjg" secondAttribute="bottom" id="abq-D7-tfH"/>
+                            <constraint firstItem="4Ld-bc-JDW" firstAttribute="trailing" secondItem="OvN-bF-pjg" secondAttribute="trailing" id="oYq-e0-jEn"/>
+                            <constraint firstItem="4Ld-bc-JDW" firstAttribute="top" secondItem="8gI-of-AEH" secondAttribute="top" id="zIE-oS-sGE"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="OvN-bF-pjg"/>
                     </view>
+                    <navigationItem key="navigationItem" id="sIC-T6-hN3"/>
                     <size key="freeformSize" width="375" height="957"/>
+                    <connections>
+                        <outlet property="customNavigationBar" destination="Es9-uh-1ZO" id="lRl-WD-l5s"/>
+                        <outlet property="viewMap" destination="Ps0-ad-2bh" id="2VO-YK-Xbj"/>
+                        <outlet property="viewMapYandex" destination="9Vf-1B-Sdw" id="VXg-5E-W7c"/>
+                        <segue destination="z8U-az-WRj" kind="show" identifier="editAccountControllerTwo" id="9Pz-61-KsU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u7r-D5-Vq8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4413.6000000000004" y="263.11844077961024"/>
+            <point key="canvasLocation" x="4574" y="264"/>
         </scene>
         <!--View Controller Six-->
         <scene sceneID="SFX-lw-m3N">
@@ -519,14 +679,17 @@
         <image name="8377411" width="6337" height="3169"/>
         <image name="Bitmap1" width="1619" height="1080"/>
         <image name="CombinedShapePromocode" width="241" height="241"/>
+        <image name="Group 2" width="375" height="96"/>
         <image name="Log in" width="44" height="17"/>
         <image name="Oval" width="40" height="40"/>
         <image name="Rectangle-1" width="375" height="96"/>
         <image name="Rectangle-6" width="58" height="3"/>
+        <image name="RectangleAccount" width="343" height="285"/>
         <image name="RectangleCopyLoginIn" width="345" height="65"/>
         <image name="RectangleLoginIn" width="343" height="63"/>
         <image name="RectangleName" width="343" height="1"/>
         <image name="Welcome to bikeapp" width="224" height="25"/>
+        <image name="allMyTripsButton" width="322" height="47"/>
         <image name="icons8-electric_bike" width="50" height="33"/>
         <image name="icons8-electric_bike_loginIn" width="130" height="83"/>
         <image name="icons8-kick_scooter" width="40" height="35"/>
@@ -534,8 +697,14 @@
         <image name="ovalPincode1" width="54" height="54"/>
         <image name="ovalPincode2" width="54" height="54"/>
         <image name="passVisible" width="19" height="14"/>
+        <image name="paymentCard" width="22" height="18"/>
+        <image name="signOutRectangle" width="343" height="48"/>
+        <image name="strelkaMyTrips" width="20" height="22"/>
         <image name="unlock" width="194" height="69"/>
         <image name="стрелка внизу" width="48" height="48"/>
         <image name="шестеренка внизу" width="48" height="48"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="9Pz-61-KsU"/>
+    </inferredMetricsTieBreakers>
 </document>

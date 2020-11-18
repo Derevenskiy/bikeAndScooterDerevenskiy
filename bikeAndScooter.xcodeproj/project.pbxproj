@@ -18,6 +18,7 @@
 		3188ACDA24F826B70062C3BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3188ACD924F826B70062C3BF /* Assets.xcassets */; };
 		3188ACDD24F826B70062C3BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3188ACDB24F826B70062C3BF /* LaunchScreen.storyboard */; };
 		3188ACE524F836C70062C3BF /* ViewControllerTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3188ACE424F836C70062C3BF /* ViewControllerTwo.swift */; };
+		31BEEFC825644F91005BF0B1 /* ViewControllerEight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31BEEFC725644F91005BF0B1 /* ViewControllerEight.swift */; };
 		31D5CF2C256153CD00E9FECA /* NavigationBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31D5CF2B256153CD00E9FECA /* NavigationBar.xib */; };
 		31D5CF312561BB7400E9FECA /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D5CF302561BB7400E9FECA /* NavigationBar.swift */; };
 		31D7AF942562FB970041F6CA /* ViewControllerSix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D7AF932562FB970041F6CA /* ViewControllerSix.swift */; };
@@ -41,13 +42,14 @@
 		3188ACDC24F826B70062C3BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3188ACDE24F826B70062C3BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3188ACE424F836C70062C3BF /* ViewControllerTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTwo.swift; sourceTree = "<group>"; };
+		31BEEFC725644F91005BF0B1 /* ViewControllerEight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerEight.swift; sourceTree = "<group>"; };
 		31D5CF2B256153CD00E9FECA /* NavigationBar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NavigationBar.xib; sourceTree = "<group>"; };
 		31D5CF302561BB7400E9FECA /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
 		31D7AF932562FB970041F6CA /* ViewControllerSix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerSix.swift; sourceTree = "<group>"; };
 		31D98585253F54BB0065D0B0 /* Extension+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+String.swift"; sourceTree = "<group>"; };
 		31EBCB0E2563C31000736BD5 /* ViewControllerSeven.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerSeven.swift; sourceTree = "<group>"; };
-		B2ECA44F156B3C3FC6AFDAB4 /* Pods-bikeAndScooter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bikeAndScooter.debug.xcconfig"; path = "Target Support Files/Pods-bikeAndScooter/Pods-bikeAndScooter.debug.xcconfig"; sourceTree = "<group>"; };
-		C1AB9C5614EBA9A9F96E6A1B /* Pods-bikeAndScooter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bikeAndScooter.release.xcconfig"; path = "Target Support Files/Pods-bikeAndScooter/Pods-bikeAndScooter.release.xcconfig"; sourceTree = "<group>"; };
+		5D1B8CA1D898309E2756E6BD /* Pods-bikeAndScooter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bikeAndScooter.debug.xcconfig"; path = "Target Support Files/Pods-bikeAndScooter/Pods-bikeAndScooter.debug.xcconfig"; sourceTree = "<group>"; };
+		9730B819F6520013B70EAFCA /* Pods-bikeAndScooter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bikeAndScooter.release.xcconfig"; path = "Target Support Files/Pods-bikeAndScooter/Pods-bikeAndScooter.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,8 +70,8 @@
 			children = (
 				3188ACD124F826AD0062C3BF /* bikeAndScooter */,
 				3188ACD024F826AD0062C3BF /* Products */,
-				67FC833AA4BE3C022B67A666 /* Pods */,
 				8914CE6486A93962B4A24E67 /* Frameworks */,
+				4CEFF79219A063F7CBAF409B /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -92,6 +94,7 @@
 				312B8ECE254F53BF00976ADA /* ViewControllerFive.swift */,
 				31D7AF932562FB970041F6CA /* ViewControllerSix.swift */,
 				31EBCB0E2563C31000736BD5 /* ViewControllerSeven.swift */,
+				31BEEFC725644F91005BF0B1 /* ViewControllerEight.swift */,
 				3188ACD624F826AE0062C3BF /* Main.storyboard */,
 				3188ACD924F826B70062C3BF /* Assets.xcassets */,
 				31D5CF2D25619DEF00E9FECA /* Navigation */,
@@ -112,12 +115,13 @@
 			path = Navigation;
 			sourceTree = "<group>";
 		};
-		67FC833AA4BE3C022B67A666 /* Pods */ = {
+		4CEFF79219A063F7CBAF409B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				B2ECA44F156B3C3FC6AFDAB4 /* Pods-bikeAndScooter.debug.xcconfig */,
-				C1AB9C5614EBA9A9F96E6A1B /* Pods-bikeAndScooter.release.xcconfig */,
+				5D1B8CA1D898309E2756E6BD /* Pods-bikeAndScooter.debug.xcconfig */,
+				9730B819F6520013B70EAFCA /* Pods-bikeAndScooter.release.xcconfig */,
 			);
+			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -248,6 +252,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3188ACD524F826AD0062C3BF /* ViewController.swift in Sources */,
+				31BEEFC825644F91005BF0B1 /* ViewControllerEight.swift in Sources */,
 				31D7AF942562FB970041F6CA /* ViewControllerSix.swift in Sources */,
 				3188ACD324F826AD0062C3BF /* AppDelegate.swift in Sources */,
 				31D98586253F54BB0065D0B0 /* Extension+String.swift in Sources */,
@@ -400,7 +405,7 @@
 		};
 		3188ACE224F826B70062C3BF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B2ECA44F156B3C3FC6AFDAB4 /* Pods-bikeAndScooter.debug.xcconfig */;
+			baseConfigurationReference = 5D1B8CA1D898309E2756E6BD /* Pods-bikeAndScooter.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -419,7 +424,7 @@
 		};
 		3188ACE324F826B70062C3BF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C1AB9C5614EBA9A9F96E6A1B /* Pods-bikeAndScooter.release.xcconfig */;
+			baseConfigurationReference = 9730B819F6520013B70EAFCA /* Pods-bikeAndScooter.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
