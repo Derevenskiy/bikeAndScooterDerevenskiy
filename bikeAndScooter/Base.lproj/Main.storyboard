@@ -205,13 +205,13 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="mackrr@outlook.com" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="r1V-TO-ybG">
-                                <rect key="frame" x="26" y="205" width="333" height="28"/>
+                                <rect key="frame" x="26" y="205" width="333" height="29"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="24"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RectangleName" translatesAutoresizingMaskIntoConstraints="NO" id="3oR-gw-fgE">
-                                <rect key="frame" x="16" y="242" width="343" height="1"/>
+                                <rect key="frame" x="16" y="243" width="343" height="1"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is your email?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FxP-ry-qOo">
                                 <rect key="frame" x="16" y="112" width="260" height="38"/>
@@ -226,7 +226,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E2w-um-DwF">
-                                <rect key="frame" x="321" y="483" width="38" height="40"/>
+                                <rect key="frame" x="321" y="484" width="38" height="40"/>
                                 <state key="normal" image="Oval"/>
                                 <connections>
                                     <action selector="buttonOval:" destination="Xdj-jJ-sVK" eventType="touchUpInside" id="t3j-eh-Dsj"/>
@@ -362,7 +362,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="unlock"/>
                                 <connections>
-                                    <segue destination="izi-PZ-eHK" kind="presentation" id="dUr-O0-4sl"/>
+                                    <segue destination="izi-PZ-eHK" kind="push" id="dUr-O0-4sl"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gYU-EB-3lp">
@@ -668,6 +668,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="V6b-ql-9uJ"/>
                     </view>
+                    <navigationItem key="navigationItem" id="rLw-7s-zfG"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9By-6k-xz6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
