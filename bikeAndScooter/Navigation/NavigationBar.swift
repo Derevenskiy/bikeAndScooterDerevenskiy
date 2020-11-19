@@ -21,6 +21,7 @@ class NavigationBar: UIView {
     @IBOutlet weak var faceImage: UIImageView!
     @IBOutlet weak var moneyLabel: UILabel!
     
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         commonInit()

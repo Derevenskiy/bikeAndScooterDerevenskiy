@@ -16,13 +16,15 @@ class ViewControllerEight: UIViewController {
 
         
     }
-    @IBAction func goBackToHome(_ sender: Any) {
-        
-        //self.dismiss(animated: true, completion: {});
-        self.navigationController?.popToRootViewController(animated: true)
-        
-        //let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
-        
+    
+    @IBAction func editImageButton(_ sender: Any) {
+        print("start edit image")
     }
+    
+    @IBAction func goBackToHome(_ sender: Any) {
+        //self.dismiss(animated: true, completion: nil)
+        self.navigationController?.popToRootViewController(animated: true)
+    }
+    
     
 }
