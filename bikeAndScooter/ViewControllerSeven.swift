@@ -39,6 +39,11 @@ class ViewControllerSeven: UIViewController {
             cameraCallback: nil)
     }
     
+    @IBAction func showSpeak(_ sender: Any) {
+        print("speak")
+    }
+    
+    
 }
 
 extension ViewControllerSeven: NavigationBarDelegate {
