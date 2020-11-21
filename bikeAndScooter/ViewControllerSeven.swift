@@ -72,8 +72,15 @@ extension ViewControllerSeven {
         cell?.commonInit(labelArray[indexPath.row], imageArray[indexPath.row])
         return cell!
     }
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("\(imageArray)")
+        if indexPath.row == 0 {
+            print("Card")
+        } else if indexPath.row == 1 {
+            print("Paypal")
+        } else {
+            print("Coopon")
+        }
     }
     
 }
