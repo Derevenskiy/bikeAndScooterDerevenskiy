@@ -9,13 +9,18 @@
 import UIKit
 import YandexMapKit
 
-class ViewControllerSeven: UIViewController {
-    
+class ViewControllerSeven: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var customNavigationBar: NavigationBar!
     
     @IBOutlet weak var viewMap: UIView!
     @IBOutlet weak var viewMapYandex: YMKMapView!
+    
+   
+    @IBOutlet weak var tableView: UITableView!
+    //labelArr
+    var imageArray = ["icons8-mastercard", "icons8-paypal", "icons8-cash"]
+    var labelArray = ["****2314", "PayPall", "Cash"]
     
     
     override func viewDidLoad() {
@@ -23,7 +28,6 @@ class ViewControllerSeven: UIViewController {
 
         self.viewMap.layer.cornerRadius = 10
         self.viewMap.layer.masksToBounds = true
-        
         
         
         customNavigationBar.delegate = self
@@ -37,6 +41,11 @@ class ViewControllerSeven: UIViewController {
             with: YMKCameraPosition(target: targetLocation, zoom: 15, azimuth: 0, tilt: 0),
             animationType: YMKAnimation(type: YMKAnimationType.smooth, duration: 5),
             cameraCallback: nil)
+        
+        //register Cell
+        let nib = UINib.init(nibName: "MyTableViewCell", bundle: nil)
+        tableView.register(nib, forCellReuseIdentifier: "customTableViewCell")
+        
     }
     
     @IBAction func showSpeak(_ sender: Any) {
@@ -50,4 +59,21 @@ extension ViewControllerSeven: NavigationBarDelegate {
     func nameSettingsButton() {
         self.performSegue(withIdentifier: "editAccountControllerTwo", sender: nil)
     }
+}
+
+extension ViewControllerSeven {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return imageArray.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "customTableViewCell", for: indexPath) as? MyTableViewCell
+        cell?.commonInit(labelArray[indexPath.row], imageArray[indexPath.row])
+        return cell!
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("\(imageArray)")
+    }
+    
 }

@@ -894,6 +894,15 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="343" height="165"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     </imageView>
+                                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fTT-ed-ZYd">
+                                                        <rect key="frame" x="0.0" y="0.0" width="343" height="114"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <connections>
+                                                            <outlet property="dataSource" destination="rHp-7e-JIj" id="qvR-P4-R2f"/>
+                                                            <outlet property="delegate" destination="rHp-7e-JIj" id="dsa-qG-bJ0"/>
+                                                        </connections>
+                                                    </tableView>
                                                 </subviews>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Onw-1J-3lB">
@@ -979,6 +988,7 @@
                     <size key="freeformSize" width="375" height="957"/>
                     <connections>
                         <outlet property="customNavigationBar" destination="Es9-uh-1ZO" id="lRl-WD-l5s"/>
+                        <outlet property="tableView" destination="fTT-ed-ZYd" id="ZZV-Fi-L0j"/>
                         <outlet property="viewMap" destination="Ps0-ad-2bh" id="2VO-YK-Xbj"/>
                         <outlet property="viewMapYandex" destination="9Vf-1B-Sdw" id="VXg-5E-W7c"/>
                         <segue destination="z8U-az-WRj" kind="show" identifier="editAccountControllerTwo" id="9Pz-61-KsU"/>
@@ -1158,6 +1168,6 @@ MBQ1AAAAAAAAAgEAAAAAAAAAVAAAAAAAAAAAAAAAAAAAFDc
         <image name="шестеренка внизу" width="48" height="48"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="DF3-hU-ckD"/>
+        <segue reference="9Pz-61-KsU"/>
     </inferredMetricsTieBreakers>
 </document>

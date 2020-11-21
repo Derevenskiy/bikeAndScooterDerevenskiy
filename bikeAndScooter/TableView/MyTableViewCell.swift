@@ -10,6 +10,12 @@ import UIKit
 
 class MyTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var imageViewOut: UIImageView!
+    @IBOutlet weak var labelOut: UILabel!
+    @IBOutlet weak var strelkaButtonOut: UIButton!
+    
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         
@@ -17,7 +23,16 @@ class MyTableViewCell: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
+        
+    }
+    
+    func commonInit(_ label: String, _ image: String) {
+        labelOut.text = label
+        imageViewOut.image = UIImage(named: image)
+    }
+    
+    @IBAction func strelkaButtonAction(_ sender: Any) {
+        
     }
     
 }
