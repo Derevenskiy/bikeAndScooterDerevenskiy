@@ -26,10 +26,17 @@ class MyTableViewCell: UITableViewCell {
         
     }
     
-    func commonInit(_ label: String, _ image: String) {
+    func commonInit( label: String, image: UIImage) {
+        labelOut.text = label
+        imageViewOut.image = image
+    }
+    
+    /* Method 2
+    func commonInit( label: String, image: String) {
         labelOut.text = label
         imageViewOut.image = UIImage(named: image)
     }
+    */
     
     @IBAction func strelkaButtonAction(_ sender: Any) {
         

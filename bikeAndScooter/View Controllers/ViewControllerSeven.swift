@@ -18,9 +18,12 @@ class ViewControllerSeven: UIViewController, UITableViewDelegate, UITableViewDat
     
    
     @IBOutlet weak var tableView: UITableView!
-    //labelArr
-    var imageArray = ["icons8-mastercard", "icons8-paypal", "icons8-cash"]
-    var labelArray = ["****2314", "PayPall", "Cash"]
+    
+    let arrayModel = [CardModel(title: "****2314", image: UIImage(named: "icons8-mastercard")!),CardModel(title: "PayPall", image: UIImage(named: "icons8-paypal")!),CardModel(title: "Cash", image: UIImage(named: "icons8-cash")!)]
+    
+    //labelArr var 2
+    //var imageArray = ["icons8-mastercard", "icons8-paypal", "icons8-cash"]
+    //var labelArray = ["****2314", "PayPall", "Cash"]
     
     
     override func viewDidLoad() {
@@ -64,12 +67,20 @@ extension ViewControllerSeven: NavigationBarDelegate {
 extension ViewControllerSeven {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return imageArray.count
+        return arrayModel.count
+        //return imageArray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: "customTableViewCell", for: indexPath) as? MyTableViewCell
-        cell?.commonInit(labelArray[indexPath.row], imageArray[indexPath.row])
+        
+        cell?.commonInit(label: arrayModel[indexPath.row].title, image: arrayModel[indexPath.row].image)
+        
+        /* Method 2
+         cell?.commonInit(labelArray[indexPath.row], imageArray[indexPath.row])
+         */
+        
         return cell!
     }
     
