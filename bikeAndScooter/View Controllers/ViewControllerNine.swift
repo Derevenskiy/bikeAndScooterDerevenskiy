@@ -10,20 +10,40 @@ import UIKit
 
 class ViewControllerNine: UIViewController, UITableViewDelegate,UITableViewDataSource {
     
-    
     @IBOutlet weak var tableView: UITableView!
     
     let arrayModel = [CardModel(title:"Credit or Debit Card",image: UIImage(named: "cardImageAddPayment")!), CardModel(title:"PayPal",image: UIImage(named: "payPallImageAddPayment")!), CardModel(title:"Coupon",image: UIImage(named: "cooponImageAddPayment")!)]
 
+    private var alertView: AlertCustom!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         let nib = UINib.init(nibName: "TableViewCellAddPayment", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: "customTableViewCellAddPayment")
+        
+        
     }
     
     @IBAction func backToAccount(_ sender: Any) {
         navigationController?.popViewController(animated: true)
+    }
+    
+    func setAlert() {
+        alertView = Bundle.main.loadNibNamed("AlertCustom", owner: self, options: nil)?.first as? AlertCustom
+        
+        self.view.addSubview(alertView)
+        alertView.center = self.view.center
+        
+        alertView.cancelOut.addTarget(self, action: #selector(cancelAction), for: .touchUpInside)
+    }
+    
+    @objc func cancelAction() {
+        //view.didAddSubview(alertView)
+        //view.willRemoveSubview(alertView)
+        alertView.removeFromSuperview()
+        print("проверка")
+        
     }
     
     
@@ -50,7 +70,7 @@ extension ViewControllerNine {
         } else if indexPath.row == 1 {
             print("Paypal")
         } else {
-            print("Coopon")
+            setAlert()
         }
     }
     

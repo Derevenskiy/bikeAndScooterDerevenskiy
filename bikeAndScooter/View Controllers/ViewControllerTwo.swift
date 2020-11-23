@@ -18,23 +18,11 @@ class ViewControllerTwo: UIViewController,UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        firstNameTextField.delegate = self
-        lastNameTextField.delegate = self
-        
-        ovalOutletButton.becomeFirstResponder()
-        
-        //NotificationCenter.default.addObserver(forName: UIResponder.keyboardWillShowNotification, object: nil, queue: nil) { (nc) in
-            //self.ovalOutletButton.frame.origin.y = -0.1
-        //}
-        
+    
     }
     
     @IBAction func buttonOval(_ sender: Any) {
-        //performSegue(withIdentifier: "three", sender: nil)
+
     }
-    
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        textField.resignFirstResponder()
-        return true
-    }
+ 
 }

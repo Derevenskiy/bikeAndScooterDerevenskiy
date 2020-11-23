@@ -16,7 +16,6 @@ class ViewController: UIViewController {
     }
     
     @IBAction func createAccountButton(_ sender: Any) {
-        //performSegue(withIdentifier: "two", sender: nil)
     }
     
     
