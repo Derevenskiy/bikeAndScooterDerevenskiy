@@ -12,7 +12,7 @@ class ViewControllerNine: UIViewController, UITableViewDelegate,UITableViewDataS
     
     @IBOutlet weak var tableView: UITableView!
     
-    let arrayModel = [CardModel(title:"Credit or Debit Card",image: UIImage(named: "cardImageAddPayment")!), CardModel(title:"PayPal",image: UIImage(named: "payPallImageAddPayment")!), CardModel(title:"Coupon",image: UIImage(named: "cooponImageAddPayment")!)]
+    let arrayModel = [CardModel(title: "Credit or Debit Card", image: "cardImageAddPayment"), CardModel(title:"PayPal",image: "payPallImageAddPayment"), CardModel(title:"Coupon",image: "cooponImageAddPayment")]
 
     private var alertView: AlertCustom!
     
@@ -39,9 +39,7 @@ class ViewControllerNine: UIViewController, UITableViewDelegate,UITableViewDataS
     }
     
     @objc func cancelAction() {
-        //view.didAddSubview(alertView)
-        //view.willRemoveSubview(alertView)
-        alertView.removeFromSuperview()
+        self.view.willRemoveSubview(alertView)
         print("проверка")
         
     }
@@ -59,7 +57,8 @@ extension ViewControllerNine {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "customTableViewCellAddPayment", for: indexPath) as? TableViewCellAddPayment
         
-        cell?.commonInit(title: arrayModel[indexPath.row].title, image: arrayModel[indexPath.row].image)
+       
+        cell?.commonInit(title: arrayModel[indexPath.row].title!, image: arrayModel[indexPath.row].image!)
         
         return cell!
     }

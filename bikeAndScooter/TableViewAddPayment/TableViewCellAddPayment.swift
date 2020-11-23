@@ -18,9 +18,9 @@ class TableViewCellAddPayment: UITableViewCell {
         // Initialization code
     }
     
-    func commonInit(title: String, image: UIImage) {
+    func commonInit(title: String, image: String) {
         titleLabel.text = title
-        cardImage.image = image
+        cardImage.image = UIImage(named: image)
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {

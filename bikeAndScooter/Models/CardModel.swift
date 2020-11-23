@@ -7,10 +7,10 @@
 //
 
 import Foundation
-import UIKit
 
 struct CardModel {
-    var title: String
-    var image: UIImage
+    
+    var title: String?
+    var image: String?
     
 }

@@ -26,9 +26,9 @@ class MyTableViewCell: UITableViewCell {
         
     }
     
-    func commonInit( label: String, image: UIImage) {
+    func commonInit( label: String, image: String) {
         labelOut.text = label
-        imageViewOut.image = image
+        imageViewOut.image = UIImage(named: image)
     }
     
     /* Method 2

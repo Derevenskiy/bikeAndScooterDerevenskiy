@@ -19,7 +19,7 @@ class ViewControllerSeven: UIViewController, UITableViewDelegate, UITableViewDat
    
     @IBOutlet weak var tableView: UITableView!
     
-    let arrayModel = [CardModel(title: "****2314", image: UIImage(named: "icons8-mastercard")!),CardModel(title: "PayPall", image: UIImage(named: "icons8-paypal")!),CardModel(title: "Cash", image: UIImage(named: "icons8-cash")!)]
+    let arrayModel = [CardModel(title: "****2314", image: "icons8-mastercard"),CardModel(title: "PayPall", image: "icons8-paypal"),CardModel(title: "Cash", image: "icons8-cash")]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -70,7 +70,7 @@ extension ViewControllerSeven {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "customTableViewCell", for: indexPath) as? MyTableViewCell
         
-        cell?.commonInit(label: arrayModel[indexPath.row].title, image: arrayModel[indexPath.row].image)
+        cell?.commonInit(label: arrayModel[indexPath.row].title!, image: arrayModel[indexPath.row].image!)
        
         return cell!
     }
