@@ -39,7 +39,7 @@ class ViewControllerNine: UIViewController, UITableViewDelegate,UITableViewDataS
     }
     
     @objc func cancelAction() {
-        self.view.willRemoveSubview(alertView)
+        alertView.removeFromSuperview()
         print("проверка")
         
     }

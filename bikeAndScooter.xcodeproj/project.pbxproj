@@ -208,6 +208,7 @@
 			buildConfigurationList = 3188ACE124F826B70062C3BF /* Build configuration list for PBXNativeTarget "bikeAndScooter" */;
 			buildPhases = (
 				853D1C320B6F8C503EC26C89 /* [CP] Check Pods Manifest.lock */,
+				317D732A256E8C6C0024E79C /* ShellScript */,
 				3188ACCB24F826AD0062C3BF /* Sources */,
 				3188ACCC24F826AD0062C3BF /* Frameworks */,
 				3188ACCD24F826AD0062C3BF /* Resources */,
@@ -274,6 +275,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		317D732A256E8C6C0024E79C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${PODS_ROOT}/SwiftLint/swiftlint\n";
+		};
 		853D1C320B6F8C503EC26C89 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -486,6 +504,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3U9Z4863V6;
 				INFOPLIST_FILE = bikeAndScooter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -505,6 +524,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3U9Z4863V6;
 				INFOPLIST_FILE = bikeAndScooter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
