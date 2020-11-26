@@ -14,8 +14,8 @@ class ViewControllerNine: UIViewController, UITableViewDelegate,UITableViewDataS
     
     let arrayModel = [CardModel(title: "Credit or Debit Card", image: "cardImageAddPayment"), CardModel(title:"PayPal",image: "payPallImageAddPayment"), CardModel(title:"Coupon",image: "cooponImageAddPayment")]
 
-    private var alertView: AlertCustom!
-    
+    let alertService = AlertService()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -28,21 +28,7 @@ class ViewControllerNine: UIViewController, UITableViewDelegate,UITableViewDataS
     @IBAction func backToAccount(_ sender: Any) {
         navigationController?.popViewController(animated: true)
     }
-    
-    func setAlert() {
-        alertView = Bundle.main.loadNibNamed("AlertCustom", owner: self, options: nil)?.first as? AlertCustom
-        
-        self.view.addSubview(alertView)
-        alertView.center = self.view.center
-        
-        alertView.cancelOut.addTarget(self, action: #selector(cancelAction), for: .touchUpInside)
-    }
-    
-    @objc func cancelAction() {
-        alertView.removeFromSuperview()
-        print("проверка")
-        
-    }
+
     
     
 }
@@ -69,8 +55,9 @@ extension ViewControllerNine {
         } else if indexPath.row == 1 {
             print("Paypal")
         } else {
-            setAlert()
+            let alertVC = alertService.alert()
+            present(alertVC,animated: true)
         }
     }
-    
+
 }
