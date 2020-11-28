@@ -17,8 +17,6 @@ class ViewControllerTwo: UIViewController,UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-    
     }
     
     @IBAction func buttonOval(_ sender: Any) {

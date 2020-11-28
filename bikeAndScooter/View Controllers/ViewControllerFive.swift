@@ -24,9 +24,7 @@ class ViewControllerFive: UIViewController, CLLocationManagerDelegate {
     @IBOutlet weak var rectangleKickScooterImage: UIImageView!
     @IBOutlet weak var rectangleBicycleImage: UIImageView!
     @IBOutlet weak var rectangleScooterImage: UIImageView!
-    
-    
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -35,11 +33,9 @@ class ViewControllerFive: UIViewController, CLLocationManagerDelegate {
         rectangleKickScooterImage.isHidden = true
         rectangleBicycleImage.isHidden = true
         rectangleScooterImage.isHidden = true
-        
         //сornerView
         self.mapView.layer.cornerRadius = 20
         self.mapView.layer.masksToBounds = true
-        
         //ASK FOR PERMISSIONS
         self.locationManager.requestAlwaysAuthorization()
         self.locationManager.requestWhenInUseAuthorization()
@@ -48,38 +44,32 @@ class ViewControllerFive: UIViewController, CLLocationManagerDelegate {
             locationManager.delegate = self
             locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
             locationManager.startUpdatingLocation()
-            
         }
-        
+
+        targetLocation()
+    }
+
+    func targetLocation() {
         let targetLocation = YMKPoint(latitude: 56.846401, longitude: 53.233265)
-        
+
         mapView.mapWindow.map.move(
             with: YMKCameraPosition(target: targetLocation, zoom: 15, azimuth: 0, tilt: 0),
             animationType: YMKAnimation(type: YMKAnimationType.smooth, duration: 5),
             cameraCallback: nil)
-        
     }
-    
+
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        guard let locationValue : CLLocationCoordinate2D = manager.location?.coordinate else {
-            return
-        }
+
+        guard let locationValue : CLLocationCoordinate2D = manager.location?.coordinate else { return }
         print("My location = \(locationValue.latitude), \(locationValue.longitude)")
         lattitude = locationValue.latitude
         longitude = locationValue.longitude
-        
     }
-    
     @IBAction func locationAction(_ sender: Any) {
-        //54.346507, 48.368771
         let targetLocationNew = YMKPoint(latitude: lattitude, longitude: longitude)
-        
-        mapView.mapWindow.map.move(
-            with: YMKCameraPosition(target: targetLocationNew, zoom: 15, azimuth: 0, tilt: 0),
-            animationType: YMKAnimation(type: YMKAnimationType.smooth, duration: 5),
-            cameraCallback: nil)
+        mapView.mapWindow.map.move(with: YMKCameraPosition(target: targetLocationNew, zoom: 15, azimuth: 0, tilt: 0),
+        animationType: YMKAnimation(type: YMKAnimationType.smooth, duration: 5), cameraCallback: nil)
     }
-    
     @IBAction func kickScooterAction(_ sender: Any) {
         rectangleKickScooterImage.isHidden = false
         rectangleBicycleImage.isHidden = true
@@ -95,7 +85,6 @@ class ViewControllerFive: UIViewController, CLLocationManagerDelegate {
         rectangleBicycleImage.isHidden = true
         rectangleScooterImage.isHidden = false
     }
-    
 }
 
 extension ViewControllerFive: NavigationBarDelegate {

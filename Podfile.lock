@@ -1,11 +1,11 @@
 PODS:
-  - SwiftLint (0.41.0)
+  - SwiftLint (0.26.0)
   - YandexMapKit (3.5.0):
     - YandexRuntime (= 3.5.0)
   - YandexRuntime (3.5.0)
 
 DEPENDENCIES:
-  - SwiftLint
+  - SwiftLint (~> 0.26.0)
   - YandexMapKit (= 3.5)
 
 SPEC REPOS:
@@ -15,10 +15,10 @@ SPEC REPOS:
     - YandexRuntime
 
 SPEC CHECKSUMS:
-  SwiftLint: c585ebd615d9520d7fbdbe151f527977b0534f1e
+  SwiftLint: f6b83e8d95ee1e91e11932d843af4fdcbf3fc764
   YandexMapKit: ecd4b78de34a35df63d066ac299e6fd0fe46d1ba
   YandexRuntime: 2d55244d06267106cf9b00c25a1e63f72a73b6fd
 
-PODFILE CHECKSUM: a44d0f92cff87d3e8dcd34bd19e3b51343d895a5
+PODFILE CHECKSUM: ecaa48b0f9bbf0b29a373bbe8064966b87f0d7ef
 
 COCOAPODS: 1.10.0

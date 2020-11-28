@@ -8,6 +8,7 @@ target 'bikeAndScooter' do
 
   # Pods for bikeAndScooter
   pod ‘YandexMapKit’, ’3.5’
-  pod 'SwiftLint'
+  pod 'SwiftLint', '~> 0.26.0'
+ 
 end
 

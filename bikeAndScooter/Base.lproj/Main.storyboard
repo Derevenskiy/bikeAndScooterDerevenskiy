@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ZGU-A5-HOv">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Hhm-9b-QLX">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -295,7 +295,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="hello" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zHx-xg-xj1">
-                                <rect key="frame" x="26" y="185" width="298" height="29"/>
+                                <rect key="frame" x="26" y="185" width="298" height="28"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="298" id="vt3-5S-scA"/>
                                 </constraints>
@@ -304,7 +304,7 @@
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RectangleName" translatesAutoresizingMaskIntoConstraints="NO" id="hW9-kf-bDY">
-                                <rect key="frame" x="15" y="223" width="345" height="1"/>
+                                <rect key="frame" x="15" y="222" width="345" height="1"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create a password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uwu-p0-AdP">
                                 <rect key="frame" x="16" y="92" width="248.5" height="38"/>
@@ -337,7 +337,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fnF-Ds-8jx">
-                                <rect key="frame" x="332" y="190" width="19" height="22"/>
+                                <rect key="frame" x="332" y="189" width="19" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="22" id="oCG-zZ-Zt1"/>
                                 </constraints>
@@ -1401,6 +1401,6 @@
         <image name="шестеренка внизу" width="48" height="48"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="9Pz-61-KsU"/>
+        <segue reference="DF3-hU-ckD"/>
     </inferredMetricsTieBreakers>
 </document>

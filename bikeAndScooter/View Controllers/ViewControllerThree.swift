@@ -19,7 +19,6 @@ class ViewControllerThree: UIViewController {
         
         textEmail.addTarget(self, action: #selector(textFieldDidChange(textField:)), for: .editingChanged)
         buttonOutlet.isEnabled = false
-        
     }
     
     @objc func textFieldDidChange(textField: UITextField) {

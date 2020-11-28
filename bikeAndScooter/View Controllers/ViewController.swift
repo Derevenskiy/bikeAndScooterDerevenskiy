@@ -18,7 +18,4 @@ class ViewController: UIViewController {
     @IBAction func createAccountButton(_ sender: Any) {
         
     }
-    
-    
 }
-

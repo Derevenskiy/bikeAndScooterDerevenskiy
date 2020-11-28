@@ -34,11 +34,11 @@
 		31EBCB0F2563C31000736BD5 /* ViewControllerSeven.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31EBCB0E2563C31000736BD5 /* ViewControllerSeven.swift */; };
 		31ED12F6256F196900982D4E /* AlertStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31ED12F5256F196900982D4E /* AlertStoryboard.storyboard */; };
 		31ED12FA256F1A5400982D4E /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31ED12F9256F1A5400982D4E /* AlertViewController.swift */; };
-		65E60C5F1BBE87B33DE86335 /* Pods_bikeAndScooter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 184A27B2CDBB73FD11B2C478 /* Pods_bikeAndScooter.framework */; };
+		EBDE388CA96609F217CB4B56 /* Pods_bikeAndScooter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24E255D45236886E3BF73FC8 /* Pods_bikeAndScooter.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		184A27B2CDBB73FD11B2C478 /* Pods_bikeAndScooter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_bikeAndScooter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		24E255D45236886E3BF73FC8 /* Pods_bikeAndScooter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_bikeAndScooter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		311DB5A6253B9FB300D6AFCD /* ViewControllerFour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFour.swift; sourceTree = "<group>"; };
 		312B8ECE254F53BF00976ADA /* ViewControllerFive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFive.swift; sourceTree = "<group>"; };
 		31390DB6256A5EC6006039A1 /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
@@ -68,8 +68,8 @@
 		31EBCB0E2563C31000736BD5 /* ViewControllerSeven.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerSeven.swift; sourceTree = "<group>"; };
 		31ED12F5256F196900982D4E /* AlertStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AlertStoryboard.storyboard; sourceTree = "<group>"; };
 		31ED12F9256F1A5400982D4E /* AlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewController.swift; sourceTree = "<group>"; };
-		5D1B8CA1D898309E2756E6BD /* Pods-bikeAndScooter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bikeAndScooter.debug.xcconfig"; path = "Target Support Files/Pods-bikeAndScooter/Pods-bikeAndScooter.debug.xcconfig"; sourceTree = "<group>"; };
-		9730B819F6520013B70EAFCA /* Pods-bikeAndScooter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bikeAndScooter.release.xcconfig"; path = "Target Support Files/Pods-bikeAndScooter/Pods-bikeAndScooter.release.xcconfig"; sourceTree = "<group>"; };
+		CA90DBC1BB7E3042ACB04716 /* Pods-bikeAndScooter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bikeAndScooter.debug.xcconfig"; path = "Target Support Files/Pods-bikeAndScooter/Pods-bikeAndScooter.debug.xcconfig"; sourceTree = "<group>"; };
+		CE00C06073F30BD2027FB623 /* Pods-bikeAndScooter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bikeAndScooter.release.xcconfig"; path = "Target Support Files/Pods-bikeAndScooter/Pods-bikeAndScooter.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +78,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3152F3762553338100755810 /* CoreLocation.framework in Frameworks */,
-				65E60C5F1BBE87B33DE86335 /* Pods_bikeAndScooter.framework in Frameworks */,
+				EBDE388CA96609F217CB4B56 /* Pods_bikeAndScooter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,8 +188,8 @@
 		4CEFF79219A063F7CBAF409B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				5D1B8CA1D898309E2756E6BD /* Pods-bikeAndScooter.debug.xcconfig */,
-				9730B819F6520013B70EAFCA /* Pods-bikeAndScooter.release.xcconfig */,
+				CA90DBC1BB7E3042ACB04716 /* Pods-bikeAndScooter.debug.xcconfig */,
+				CE00C06073F30BD2027FB623 /* Pods-bikeAndScooter.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -198,7 +198,7 @@
 			isa = PBXGroup;
 			children = (
 				3152F3752553338100755810 /* CoreLocation.framework */,
-				184A27B2CDBB73FD11B2C478 /* Pods_bikeAndScooter.framework */,
+				24E255D45236886E3BF73FC8 /* Pods_bikeAndScooter.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -210,12 +210,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3188ACE124F826B70062C3BF /* Build configuration list for PBXNativeTarget "bikeAndScooter" */;
 			buildPhases = (
+				107AF6955CD587128C2B9D8D /* [CP] Check Pods Manifest.lock */,
 				31ED12F3256EA86A00982D4E /* ShellScript */,
-				853D1C320B6F8C503EC26C89 /* [CP] Check Pods Manifest.lock */,
 				3188ACCB24F826AD0062C3BF /* Sources */,
 				3188ACCC24F826AD0062C3BF /* Frameworks */,
 				3188ACCD24F826AD0062C3BF /* Resources */,
-				973979C91C2B00875FAD5CC4 /* [CP] Copy Pods Resources */,
+				61BD2691EFE7088FEDBE1643 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -278,24 +278,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		31ED12F3256EA86A00982D4E /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "#${PODS_ROOT}/SwiftLint/swiftlint\n";
-		};
-		853D1C320B6F8C503EC26C89 /* [CP] Check Pods Manifest.lock */ = {
+		107AF6955CD587128C2B9D8D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -317,7 +300,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		973979C91C2B00875FAD5CC4 /* [CP] Copy Pods Resources */ = {
+		31ED12F3256EA86A00982D4E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
+		61BD2691EFE7088FEDBE1643 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -502,7 +502,7 @@
 		};
 		3188ACE224F826B70062C3BF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5D1B8CA1D898309E2756E6BD /* Pods-bikeAndScooter.debug.xcconfig */;
+			baseConfigurationReference = CA90DBC1BB7E3042ACB04716 /* Pods-bikeAndScooter.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -522,7 +522,7 @@
 		};
 		3188ACE324F826B70062C3BF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9730B819F6520013B70EAFCA /* Pods-bikeAndScooter.release.xcconfig */;
+			baseConfigurationReference = CE00C06073F30BD2027FB623 /* Pods-bikeAndScooter.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
