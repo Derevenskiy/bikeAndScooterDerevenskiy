@@ -10,12 +10,6 @@ import UIKit
 
 class AlertViewController: UIViewController {
 
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-    }
-
     @IBAction func cancelAction(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }

@@ -245,7 +245,6 @@
                                 </constraints>
                                 <state key="normal" image="Oval"/>
                                 <connections>
-                                    <action selector="buttonOval:" destination="Xdj-jJ-sVK" eventType="touchUpInside" id="t3j-eh-Dsj"/>
                                     <segue destination="d1c-Sw-Xvv" kind="presentation" identifier="four" id="GuT-hp-C7q"/>
                                 </connections>
                             </button>
@@ -271,7 +270,6 @@
                     </view>
                     <navigationItem key="navigationItem" id="Cs8-zO-1t7"/>
                     <connections>
-                        <outlet property="buttonOutlet" destination="E2w-um-DwF" id="IRd-Uo-HTG"/>
                         <outlet property="textEmail" destination="r1V-TO-ybG" id="G65-lM-jsE"/>
                     </connections>
                 </viewController>
@@ -316,7 +314,6 @@
                                 </constraints>
                                 <state key="normal" image="Oval"/>
                                 <connections>
-                                    <action selector="buttonOval:" destination="Xdj-jJ-sVK" eventType="touchUpInside" id="vEx-wd-NhZ"/>
                                     <segue destination="Fsy-Jc-IFe" kind="show" id="3Hw-UC-omO"/>
                                 </connections>
                             </button>
@@ -361,7 +358,6 @@
                         <viewLayoutGuide key="safeArea" id="MuR-6v-4Fw"/>
                     </view>
                     <connections>
-                        <outlet property="buttonOutlet" destination="CjA-IE-gqe" id="wUF-j4-X9e"/>
                         <outlet property="eyeButtonOutlet" destination="fnF-Ds-8jx" id="ygp-BS-iZQ"/>
                         <outlet property="passTextField" destination="zHx-xg-xj1" id="zJS-J7-wSQ"/>
                     </connections>
@@ -946,9 +942,6 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gh5-Pc-kYv">
                                                         <rect key="frame" x="303" y="14" width="32" height="32"/>
                                                         <state key="normal" image="strelkaAccount"/>
-                                                        <connections>
-                                                            <action selector="showSpeak:" destination="rHp-7e-JIj" eventType="touchUpInside" id="aaB-ek-hRw"/>
-                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <constraints>

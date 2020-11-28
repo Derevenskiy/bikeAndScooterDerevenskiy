@@ -9,42 +9,38 @@
 import UIKit
 
 class AddPaymentViewController: UIViewController, UITableViewDelegate,UITableViewDataSource {
-    
+    //MARK: - IBOutlet
     @IBOutlet weak var tableView: UITableView!
-    
+    //MARK: - Array
     let arrayModel = [CardModel(title: "Credit or Debit Card", image: "cardImageAddPayment"),
         CardModel(title:"PayPal",image: "payPallImageAddPayment"),
         CardModel(title:"Coupon",image: "cooponImageAddPayment")]
-
+    //MARK: - alertService
     let alertService = AlertService()
-
+    //MARK: - viewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         let nib = UINib.init(nibName: "TableViewCellAddPayment", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: "customTableViewCellAddPayment")
     }
-    
+    //MARK: - IBAction
     @IBAction func backToAccount(_ sender: Any) {
         navigationController?.popViewController(animated: true)
     }
 }
-
+//MARK: - extension AddPaymentViewController
 extension AddPaymentViewController {
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return arrayModel.count
     }
-    
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
         let cell = tableView.dequeueReusableCell(withIdentifier: "customTableViewCellAddPayment", for: indexPath) as? TableViewCellAddPayment
 
         cell?.commonInit(title: arrayModel[indexPath.row].title!, image: arrayModel[indexPath.row].image!)
-        
         return cell!
     }
-    
+
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.row == 0 {
             self.performSegue(withIdentifier: "addCard", sender: nil)

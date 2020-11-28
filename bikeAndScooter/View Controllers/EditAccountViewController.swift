@@ -9,7 +9,7 @@
 import UIKit
 
 class EditAccountViewController: UIViewController {
-    
+    //MARK: - IBAction
     @IBAction func goBackToHome(_ sender: Any) {
         self.navigationController?.popToRootViewController(animated: true)
     }

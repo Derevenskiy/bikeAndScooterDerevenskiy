@@ -9,8 +9,6 @@
 import Foundation
 
 struct CardModel {
-    
     var title: String?
     var image: String?
-    
 }

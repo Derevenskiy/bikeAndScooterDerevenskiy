@@ -9,18 +9,17 @@
 import UIKit
 
 class CreateEmailViewController: UIViewController {
-    
+    //MARK: - Outlets
     @IBOutlet weak var buttonOutlet: UIButton!
-    
     @IBOutlet weak var textEmail: UITextField!
-    
+    //MARK: - viewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         textEmail.addTarget(self, action: #selector(textFieldDidChange(textField:)), for: .editingChanged)
+
         buttonOutlet.isEnabled = false
     }
-    
+    //MARK: - Function
     @objc func textFieldDidChange(textField: UITextField) {
         if textEmail.text!.isValidEmail() {
             buttonOutlet.isEnabled = true
@@ -29,5 +28,4 @@ class CreateEmailViewController: UIViewController {
             print("Некорректный e-mail")
         }
     }
-    
 }

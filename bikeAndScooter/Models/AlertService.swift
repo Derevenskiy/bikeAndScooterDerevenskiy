@@ -11,7 +11,6 @@ import UIKit
 class AlertService {
 
     func alert() -> AlertViewController {
-
         let storyboard = UIStoryboard(name: "AlertStoryboard", bundle: nil)
         let alertVC = storyboard.instantiateViewController(withIdentifier: "AlertVC") as! AlertViewController
 
