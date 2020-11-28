@@ -8,11 +8,13 @@
 
 import UIKit
 
-class ViewControllerNine: UIViewController, UITableViewDelegate,UITableViewDataSource {
+class AddPaymentViewController: UIViewController, UITableViewDelegate,UITableViewDataSource {
     
     @IBOutlet weak var tableView: UITableView!
     
-    let arrayModel = [CardModel(title: "Credit or Debit Card", image: "cardImageAddPayment"), CardModel(title:"PayPal",image: "payPallImageAddPayment"), CardModel(title:"Coupon",image: "cooponImageAddPayment")]
+    let arrayModel = [CardModel(title: "Credit or Debit Card", image: "cardImageAddPayment"),
+        CardModel(title:"PayPal",image: "payPallImageAddPayment"),
+        CardModel(title:"Coupon",image: "cooponImageAddPayment")]
 
     let alertService = AlertService()
 
@@ -21,19 +23,14 @@ class ViewControllerNine: UIViewController, UITableViewDelegate,UITableViewDataS
         
         let nib = UINib.init(nibName: "TableViewCellAddPayment", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: "customTableViewCellAddPayment")
-        
-        
     }
     
     @IBAction func backToAccount(_ sender: Any) {
         navigationController?.popViewController(animated: true)
     }
-
-    
-    
 }
 
-extension ViewControllerNine {
+extension AddPaymentViewController {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return arrayModel.count
@@ -42,8 +39,7 @@ extension ViewControllerNine {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "customTableViewCellAddPayment", for: indexPath) as? TableViewCellAddPayment
-        
-       
+
         cell?.commonInit(title: arrayModel[indexPath.row].title!, image: arrayModel[indexPath.row].image!)
         
         return cell!
@@ -59,5 +55,4 @@ extension ViewControllerNine {
             present(alertVC,animated: true)
         }
     }
-
 }

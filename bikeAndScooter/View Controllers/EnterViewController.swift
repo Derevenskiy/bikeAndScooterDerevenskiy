@@ -8,14 +8,6 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-    }
+class EnterViewController: UIViewController {
     
-    @IBAction func createAccountButton(_ sender: Any) {
-        
-    }
 }

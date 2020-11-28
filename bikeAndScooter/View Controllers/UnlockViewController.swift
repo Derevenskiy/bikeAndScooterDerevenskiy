@@ -8,13 +8,6 @@
 
 import UIKit
 
-class ViewControllerSix: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        
-    }
+class UnlockViewController: UIViewController {
     
-
 }

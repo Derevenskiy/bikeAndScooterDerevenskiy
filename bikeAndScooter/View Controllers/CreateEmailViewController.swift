@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewControllerThree: UIViewController {
+class CreateEmailViewController: UIViewController {
     
     @IBOutlet weak var buttonOutlet: UIButton!
     

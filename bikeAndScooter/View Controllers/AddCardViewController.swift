@@ -8,18 +8,9 @@
 
 import UIKit
 
-class ViewControllerTen: UIViewController {
+class AddCardViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        
-    }
-    
     @IBAction func backButton(_ sender: Any) {
         navigationController?.popViewController(animated: true)
     }
-    
-
-
 }

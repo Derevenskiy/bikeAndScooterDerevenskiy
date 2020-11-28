@@ -10,7 +10,7 @@ import UIKit
 import YandexMapKit
 import CoreLocation
 
-class ViewControllerFive: UIViewController, CLLocationManagerDelegate {
+class HomeViewController: UIViewController, CLLocationManagerDelegate {
     
     @IBOutlet weak var customNavigationBar: NavigationBar!
     
@@ -87,7 +87,7 @@ class ViewControllerFive: UIViewController, CLLocationManagerDelegate {
     }
 }
 
-extension ViewControllerFive: NavigationBarDelegate {
+extension HomeViewController: NavigationBarDelegate {
     func nameSettingsButton() {
         self.performSegue(withIdentifier: "editAccountController", sender: nil)
     }

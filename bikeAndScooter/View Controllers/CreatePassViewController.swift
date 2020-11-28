@@ -8,11 +8,10 @@
 
 import UIKit
 
-class ViewControllerFour: UIViewController {
+class CreatePassViewController: UIViewController {
     
     @IBOutlet weak var passTextField: UITextField!
     @IBOutlet weak var eyeButtonOutlet: UIButton!
-    
     
     @IBOutlet weak var buttonOutlet: UIButton!
     

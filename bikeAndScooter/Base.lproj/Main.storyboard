@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Hhm-9b-QLX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -15,10 +15,10 @@
         </array>
     </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Enter View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="bikeAndScooter" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="EnterViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -57,8 +57,7 @@
                                                 </constraints>
                                                 <state key="normal" image="RectangleCopyLoginIn"/>
                                                 <connections>
-                                                    <action selector="createAccountButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B9p-BK-umY"/>
-                                                    <segue destination="Xdj-jJ-sVK" kind="presentation" identifier="two" id="vU7-8S-4zw"/>
+                                                    <segue destination="Xdj-jJ-sVK" kind="presentation" id="w6c-pM-hn4"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -105,10 +104,10 @@
             </objects>
             <point key="canvasLocation" x="568.79999999999995" y="133.5832083958021"/>
         </scene>
-        <!--View Controller Two-->
+        <!--Create Name View Controller-->
         <scene sceneID="cMl-95-vnx">
             <objects>
-                <viewController id="Xdj-jJ-sVK" customClass="ViewControllerTwo" customModule="bikeAndScooter" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Xdj-jJ-sVK" customClass="CreateNameViewController" customModule="bikeAndScooter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zgT-7z-Ojr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -127,8 +126,7 @@
                                 </constraints>
                                 <state key="normal" image="Oval"/>
                                 <connections>
-                                    <action selector="buttonOval:" destination="Xdj-jJ-sVK" eventType="touchUpInside" id="onj-Nk-7R1"/>
-                                    <segue destination="rXb-o9-NG4" kind="presentation" identifier="three" id="Clt-6j-szm"/>
+                                    <segue destination="rXb-o9-NG4" kind="presentation" identifier="" id="Clt-6j-szm"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RectangleName" translatesAutoresizingMaskIntoConstraints="NO" id="oeg-ID-bEU">
@@ -196,20 +194,15 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="dFf-7R-6VZ"/>
                     </view>
-                    <connections>
-                        <outlet property="firstNameTextField" destination="Ill-8g-MHn" id="t95-jr-093"/>
-                        <outlet property="lastNameTextField" destination="FMG-bq-aOf" id="lbk-PH-myb"/>
-                        <outlet property="ovalOutletButton" destination="B9w-Kr-i92" id="tFl-nJ-PVZ"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Da0-Ud-oGi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1293.5999999999999" y="133.5832083958021"/>
         </scene>
-        <!--View Controller Three-->
+        <!--Create Email View Controller-->
         <scene sceneID="Tl6-p4-v05">
             <objects>
-                <viewController id="rXb-o9-NG4" customClass="ViewControllerThree" customModule="bikeAndScooter" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="rXb-o9-NG4" customClass="CreateEmailViewController" customModule="bikeAndScooter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="S4k-Fg-ciJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -286,16 +279,16 @@
             </objects>
             <point key="canvasLocation" x="2068" y="133.5832083958021"/>
         </scene>
-        <!--View Controller Four-->
+        <!--Create Pass View Controller-->
         <scene sceneID="tSI-R1-oRy">
             <objects>
-                <viewController id="d1c-Sw-Xvv" customClass="ViewControllerFour" customModule="bikeAndScooter" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="d1c-Sw-Xvv" customClass="CreatePassViewController" customModule="bikeAndScooter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Eoo-zI-Pz5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="hello" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zHx-xg-xj1">
-                                <rect key="frame" x="26" y="185" width="298" height="28"/>
+                                <rect key="frame" x="26" y="185" width="298" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="298" id="vt3-5S-scA"/>
                                 </constraints>
@@ -304,7 +297,7 @@
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RectangleName" translatesAutoresizingMaskIntoConstraints="NO" id="hW9-kf-bDY">
-                                <rect key="frame" x="15" y="222" width="345" height="1"/>
+                                <rect key="frame" x="15" y="223" width="345" height="1"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create a password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uwu-p0-AdP">
                                 <rect key="frame" x="16" y="92" width="248.5" height="38"/>
@@ -337,7 +330,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fnF-Ds-8jx">
-                                <rect key="frame" x="332" y="189" width="19" height="22"/>
+                                <rect key="frame" x="332" y="190" width="19" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="22" id="oCG-zZ-Zt1"/>
                                 </constraints>
@@ -377,10 +370,10 @@
             </objects>
             <point key="canvasLocation" x="2840.8000000000002" y="133.5832083958021"/>
         </scene>
-        <!--View Controller Five-->
+        <!--Home View Controller-->
         <scene sceneID="FUr-Kn-wHO">
             <objects>
-                <viewController id="Hhm-9b-QLX" customClass="ViewControllerFive" customModule="bikeAndScooter" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Hhm-9b-QLX" customClass="HomeViewController" customModule="bikeAndScooter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yYQ-Ou-jcT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -520,10 +513,10 @@
             </objects>
             <point key="canvasLocation" x="3625" y="-600"/>
         </scene>
-        <!--View Controller Eight-->
+        <!--Edit Account View Controller-->
         <scene sceneID="6LI-ya-4YA">
             <objects>
-                <viewController id="z8U-az-WRj" customClass="ViewControllerEight" customModule="bikeAndScooter" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="z8U-az-WRj" customClass="EditAccountViewController" customModule="bikeAndScooter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Lka-Rz-Ctb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="957"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -564,9 +557,6 @@
                                                     <constraint firstAttribute="height" constant="45" id="yyK-cn-NRL"/>
                                                 </constraints>
                                                 <state key="normal" image="editFaceImageButton"/>
-                                                <connections>
-                                                    <action selector="editImageButton:" destination="z8U-az-WRj" eventType="touchUpInside" id="CzA-0U-VQ6"/>
-                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$2.845" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yED-Ia-fPS">
                                                 <rect key="frame" x="165.5" y="302" width="44" height="16"/>
@@ -788,10 +778,10 @@
             </objects>
             <point key="canvasLocation" x="4573.6000000000004" y="-731.78410794602701"/>
         </scene>
-        <!--View Controller Seven-->
+        <!--Settings View Controller-->
         <scene sceneID="EX1-EE-1BP">
             <objects>
-                <viewController id="rHp-7e-JIj" customClass="ViewControllerSeven" customModule="bikeAndScooter" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="rHp-7e-JIj" customClass="SettingsViewController" customModule="bikeAndScooter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8gI-of-AEH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="957"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1047,10 +1037,10 @@
             </objects>
             <point key="canvasLocation" x="4573.6000000000004" y="263.11844077961024"/>
         </scene>
-        <!--View Controller Nine-->
+        <!--Add Payment View Controller-->
         <scene sceneID="Kks-Id-I8D">
             <objects>
-                <viewController id="ZGU-A5-HOv" customClass="ViewControllerNine" customModule="bikeAndScooter" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ZGU-A5-HOv" customClass="AddPaymentViewController" customModule="bikeAndScooter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="P4P-Pw-TQS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1097,10 +1087,10 @@
             </objects>
             <point key="canvasLocation" x="5527" y="196"/>
         </scene>
-        <!--View Controller Ten-->
+        <!--Add Card View Controller-->
         <scene sceneID="tUR-mi-Z6m">
             <objects>
-                <viewController id="Pie-KX-Eez" customClass="ViewControllerTen" customModule="bikeAndScooter" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Pie-KX-Eez" customClass="AddCardViewController" customModule="bikeAndScooter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rk8-eW-63V">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1309,10 +1299,10 @@
             </objects>
             <point key="canvasLocation" x="6309.6000000000004" y="195.6521739130435"/>
         </scene>
-        <!--View Controller Six-->
+        <!--Unlock View Controller-->
         <scene sceneID="SFX-lw-m3N">
             <objects>
-                <viewController id="izi-PZ-eHK" customClass="ViewControllerSix" customModule="bikeAndScooter" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="izi-PZ-eHK" customClass="UnlockViewController" customModule="bikeAndScooter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="y2H-KY-n0f">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1401,6 +1391,6 @@
         <image name="шестеренка внизу" width="48" height="48"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="DF3-hU-ckD"/>
+        <segue reference="9Pz-61-KsU"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -9,14 +9,13 @@
 import UIKit
 import YandexMapKit
 
-class ViewControllerSeven: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class SettingsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var customNavigationBar: NavigationBar!
     
     @IBOutlet weak var viewMap: UIView!
     @IBOutlet weak var viewMapYandex: YMKMapView!
-    
-   
+
     @IBOutlet weak var tableView: UITableView!
     
     let arrayModel = [CardModel(title: "****2314", image: "icons8-mastercard"),CardModel(title: "PayPall", image: "icons8-paypal"),CardModel(title: "Cash", image: "icons8-cash")]
@@ -26,8 +25,7 @@ class ViewControllerSeven: UIViewController, UITableViewDelegate, UITableViewDat
 
         self.viewMap.layer.cornerRadius = 10
         self.viewMap.layer.masksToBounds = true
-        
-        
+
         customNavigationBar.delegate = self
         
         self.viewMapYandex.layer.cornerRadius = 15
@@ -43,23 +41,18 @@ class ViewControllerSeven: UIViewController, UITableViewDelegate, UITableViewDat
         //register Cell
         let nib = UINib.init(nibName: "MyTableViewCell", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: "customTableViewCell")
-        
     }
-    
     @IBAction func showSpeak(_ sender: Any) {
         print("speak")
     }
-    
-    
 }
 
-extension ViewControllerSeven: NavigationBarDelegate {
+extension SettingsViewController: NavigationBarDelegate {
     func nameSettingsButton() {
         self.performSegue(withIdentifier: "editAccountControllerTwo", sender: nil)
     }
 }
-
-extension ViewControllerSeven {
+extension SettingsViewController {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return arrayModel.count
@@ -74,7 +67,6 @@ extension ViewControllerSeven {
        
         return cell!
     }
-    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.row == 0 {
             print("Card")
@@ -84,5 +76,4 @@ extension ViewControllerSeven {
             print("Coopon")
         }
     }
-    
 }
