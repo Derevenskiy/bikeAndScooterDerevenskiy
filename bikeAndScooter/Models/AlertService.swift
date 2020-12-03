@@ -13,7 +13,7 @@ class AlertService {
         return AlertViewController.makeViewController()
     }
 }
-
+// новая фича
 protocol StoryboardLoadable {
     static var storyboardName: String {get}
 }
