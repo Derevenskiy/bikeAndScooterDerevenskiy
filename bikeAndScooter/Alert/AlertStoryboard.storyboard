@@ -18,13 +18,13 @@
         <!--Alert View Controller-->
         <scene sceneID="WcG-UB-0Ur">
             <objects>
-                <viewController storyboardIdentifier="AlertVC" modalTransitionStyle="crossDissolve" modalPresentationStyle="overFullScreen" id="UmS-Kh-YbD" customClass="AlertViewController" customModule="bikeAndScooter" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AlertViewController" modalTransitionStyle="crossDissolve" modalPresentationStyle="overFullScreen" id="UmS-Kh-YbD" customClass="AlertViewController" customModule="bikeAndScooter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fbp-C7-Ep3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xPx-rX-tbn">
-                                <rect key="frame" x="0.0" y="304" width="375" height="148"/>
+                                <rect key="frame" x="0.0" y="269.5" width="375" height="148"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Enter your promo code" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iEG-gA-Tgm">
                                         <rect key="frame" x="28" y="28" width="191" height="30"/>
@@ -34,7 +34,7 @@
                                         <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="18"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aK5-ec-Yi5">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle-1" translatesAutoresizingMaskIntoConstraints="NO" id="aK5-ec-Yi5">
                                         <rect key="frame" x="16" y="68" width="343" height="1"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1" id="Zxz-RN-Huk"/>
@@ -49,6 +49,9 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e7u-21-fbR">
                                         <rect key="frame" x="193" y="90" width="166" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="166" id="guP-C1-fy4"/>
+                                        </constraints>
                                         <state key="normal" image="rectangleAddPromocode"/>
                                         <connections>
                                             <action selector="addAction:" destination="UmS-Kh-YbD" eventType="touchUpInside" id="wMJ-eO-fny"/>
@@ -57,26 +60,26 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstItem="e7u-21-fbR" firstAttribute="leading" secondItem="NNH-IW-U7h" secondAttribute="trailing" constant="11" id="Dp6-vo-4GI"/>
                                     <constraint firstAttribute="bottom" secondItem="NNH-IW-U7h" secondAttribute="bottom" constant="14" id="H6n-UQ-gvN"/>
-                                    <constraint firstAttribute="trailing" secondItem="e7u-21-fbR" secondAttribute="trailing" constant="16" id="HIk-Ep-tIu"/>
                                     <constraint firstAttribute="trailing" secondItem="aK5-ec-Yi5" secondAttribute="trailing" constant="16" id="JvU-ci-Jgv"/>
+                                    <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="iEG-gA-Tgm" secondAttribute="trailing" constant="156" id="Kel-AO-4vP"/>
                                     <constraint firstItem="aK5-ec-Yi5" firstAttribute="leading" secondItem="xPx-rX-tbn" secondAttribute="leading" constant="16" id="VoQ-Gg-YXE"/>
-                                    <constraint firstItem="NNH-IW-U7h" firstAttribute="top" secondItem="aK5-ec-Yi5" secondAttribute="bottom" constant="21" id="bp2-6u-pYl"/>
-                                    <constraint firstItem="iEG-gA-Tgm" firstAttribute="top" secondItem="xPx-rX-tbn" secondAttribute="top" constant="28" id="egG-Li-Spn"/>
+                                    <constraint firstAttribute="trailing" secondItem="e7u-21-fbR" secondAttribute="trailing" constant="16" id="aSq-rF-QpW"/>
+                                    <constraint firstItem="iEG-gA-Tgm" firstAttribute="top" secondItem="xPx-rX-tbn" secondAttribute="top" constant="28" id="dqz-vk-e4m"/>
                                     <constraint firstItem="iEG-gA-Tgm" firstAttribute="leading" secondItem="xPx-rX-tbn" secondAttribute="leading" constant="28" id="fPO-iV-aUr"/>
-                                    <constraint firstItem="e7u-21-fbR" firstAttribute="top" secondItem="aK5-ec-Yi5" secondAttribute="bottom" constant="21" id="lqF-88-Mdd"/>
+                                    <constraint firstAttribute="height" constant="148" id="jhO-tM-aKQ"/>
                                     <constraint firstItem="aK5-ec-Yi5" firstAttribute="top" secondItem="iEG-gA-Tgm" secondAttribute="bottom" constant="10" id="qTQ-uS-DFw"/>
                                     <constraint firstAttribute="bottom" secondItem="e7u-21-fbR" secondAttribute="bottom" constant="14" id="rgD-G9-3AH"/>
-                                    <constraint firstItem="e7u-21-fbR" firstAttribute="leading" secondItem="NNH-IW-U7h" secondAttribute="trailing" constant="11" id="whv-Xi-U4f"/>
                                     <constraint firstItem="NNH-IW-U7h" firstAttribute="leading" secondItem="xPx-rX-tbn" secondAttribute="leading" constant="16" id="yn7-j9-Fia"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.34999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="xPx-rX-tbn" firstAttribute="top" secondItem="cLk-51-QiO" secondAttribute="top" constant="284" id="2ex-IV-Bnt"/>
                             <constraint firstItem="xPx-rX-tbn" firstAttribute="leading" secondItem="cLk-51-QiO" secondAttribute="leading" id="L7O-gd-fja"/>
-                            <constraint firstItem="cLk-51-QiO" firstAttribute="bottom" secondItem="xPx-rX-tbn" secondAttribute="bottom" constant="215" id="Q6F-Hr-Ae6"/>
+                            <constraint firstItem="xPx-rX-tbn" firstAttribute="centerY" secondItem="cLk-51-QiO" secondAttribute="centerY" id="ayo-da-cFG"/>
+                            <constraint firstItem="xPx-rX-tbn" firstAttribute="centerX" secondItem="cLk-51-QiO" secondAttribute="centerX" id="gv0-JZ-AHN"/>
                             <constraint firstItem="xPx-rX-tbn" firstAttribute="trailing" secondItem="cLk-51-QiO" secondAttribute="trailing" id="ujg-nC-mVO"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="cLk-51-QiO"/>
@@ -88,6 +91,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Rectangle-1" width="375" height="96"/>
         <image name="rectangleAddPromocode" width="166" height="44"/>
         <image name="rectangleCancelPromocode-2" width="166" height="44"/>
     </resources>

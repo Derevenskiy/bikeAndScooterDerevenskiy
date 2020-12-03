@@ -9,11 +9,28 @@
 import UIKit
 
 class AlertService {
-
     func alert() -> AlertViewController {
-        let storyboard = UIStoryboard(name: "AlertStoryboard", bundle: nil)
-        let alertVC = storyboard.instantiateViewController(withIdentifier: "AlertVC") as! AlertViewController
+        return AlertViewController.makeViewController()
+    }
+}
 
-        return alertVC
+protocol StoryboardLoadable {
+    static var storyboardName: String {get}
+}
+
+extension StoryboardLoadable where Self: UIViewController {
+
+    private static func makeStoryboard() -> UIStoryboard {
+        return UIStoryboard(name: storyboardName, bundle: nil)
+    }
+
+    static func makeViewController() -> Self {
+        return (makeStoryboard().instantiateViewController(withIdentifier: String(describing: Self.self)) as? Self)!
+    }
+}
+
+extension AlertViewController: StoryboardLoadable {
+    static var storyboardName: String {
+       return "AlertStoryboard"
     }
 }

@@ -9,17 +9,19 @@
 import UIKit
 
 class CreateEmailViewController: UIViewController {
-    //MARK: - Outlets
+
+    // MARK: - Outlets
     @IBOutlet weak var buttonOutlet: UIButton!
     @IBOutlet weak var textEmail: UITextField!
-    //MARK: - viewDidLoad
+
+    // MARK: - viewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
         textEmail.addTarget(self, action: #selector(textFieldDidChange(textField:)), for: .editingChanged)
-
         buttonOutlet.isEnabled = false
     }
-    //MARK: - Function
+
+    // MARK: - Function
     @objc func textFieldDidChange(textField: UITextField) {
         if textEmail.text!.isValidEmail() {
             buttonOutlet.isEnabled = true

@@ -8,27 +8,33 @@
 
 import UIKit
 
-class AddPaymentViewController: UIViewController, UITableViewDelegate,UITableViewDataSource {
-    //MARK: - IBOutlet
+class AddPaymentViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+
+    // MARK: - IBOutlet
     @IBOutlet weak var tableView: UITableView!
-    //MARK: - Array
+
+    // MARK: - Array
     let arrayModel = [CardModel(title: "Credit or Debit Card", image: "cardImageAddPayment"),
-        CardModel(title:"PayPal",image: "payPallImageAddPayment"),
-        CardModel(title:"Coupon",image: "cooponImageAddPayment")]
-    //MARK: - alertService
+                      CardModel(title: "PayPal", image: "payPallImageAddPayment"),
+                      CardModel(title: "Coupon", image: "cooponImageAddPayment")]
+
+    // MARK: - alertService
     let alertService = AlertService()
-    //MARK: - viewDidLoad
+
+    // MARK: - viewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
         let nib = UINib.init(nibName: "TableViewCellAddPayment", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: "customTableViewCellAddPayment")
     }
-    //MARK: - IBAction
+
+    // MARK: - IBAction
     @IBAction func backToAccount(_ sender: Any) {
         navigationController?.popViewController(animated: true)
     }
 }
-//MARK: - extension AddPaymentViewController
+
+// MARK: - extension AddPaymentViewController
 extension AddPaymentViewController {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return arrayModel.count
@@ -48,7 +54,7 @@ extension AddPaymentViewController {
             print("Paypal")
         } else {
             let alertVC = alertService.alert()
-            present(alertVC,animated: true)
+            present(alertVC, animated: true)
         }
     }
 }

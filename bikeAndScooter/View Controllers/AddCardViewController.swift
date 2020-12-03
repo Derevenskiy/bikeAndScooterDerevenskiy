@@ -9,7 +9,8 @@
 import UIKit
 
 class AddCardViewController: UIViewController {
-    //MARK: - IBAction
+
+    // MARK: - IBAction
     @IBAction func backButton(_ sender: Any) {
         navigationController?.popViewController(animated: true)
     }
