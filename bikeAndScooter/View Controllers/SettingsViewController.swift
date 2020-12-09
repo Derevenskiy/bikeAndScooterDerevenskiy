@@ -66,7 +66,7 @@ extension SettingsViewController: NavigationBarDelegate {
     }
 }
 
-// MARK: - Extension SettingsViewController
+// MARK: - UITableViewDataSource
 extension SettingsViewController {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return arrayModel.count
@@ -77,7 +77,7 @@ extension SettingsViewController {
         cell?.commonInit(label: arrayModel[indexPath.row].title!, image: arrayModel[indexPath.row].image!)
         return cell!
     }
-
+// MARK: - UITableViewDelegate
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.row == 0 {
             print("Card")

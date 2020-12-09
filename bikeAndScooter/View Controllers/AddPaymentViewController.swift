@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AddPaymentViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class AddPaymentViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     // MARK: - IBOutlet
     @IBOutlet weak var tableView: UITableView!
@@ -24,6 +24,7 @@ class AddPaymentViewController: UIViewController, UITableViewDelegate, UITableVi
     // MARK: - viewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
+
         let nib = UINib.init(nibName: "TableViewCellAddPayment", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: "customTableViewCellAddPayment")
     }
@@ -33,8 +34,7 @@ class AddPaymentViewController: UIViewController, UITableViewDelegate, UITableVi
         navigationController?.popViewController(animated: true)
     }
 }
-
-// MARK: - extension AddPaymentViewController
+// MARK: - UITableViewDataSource
 extension AddPaymentViewController {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return arrayModel.count
@@ -46,7 +46,7 @@ extension AddPaymentViewController {
         cell?.commonInit(title: arrayModel[indexPath.row].title!, image: arrayModel[indexPath.row].image!)
         return cell!
     }
-
+// MARK: - UITableViewDelegate
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.row == 0 {
             self.performSegue(withIdentifier: "addCard", sender: nil)
